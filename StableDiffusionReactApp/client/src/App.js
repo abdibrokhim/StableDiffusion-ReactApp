@@ -12,6 +12,7 @@ function App() {
         for (let i = 0; i < (res.data['images'].length); i++) {
           let href = document.createElement('a');
           href.href = '#';
+          // href.download = 'img';
           let image = document.createElement('img');
           image.src = res.data['images'][i]['srcSmall'];
           image.alt = 'img';
